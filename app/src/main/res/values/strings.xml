@@ -1,0 +1,10 @@
+<resources>
+<string name="app_name">Disfrutando Puebla</string>
+
+<string name="title_section1">Eventos y Ferias</string>
+<string name="title_section2">Municipios</string>
+<string name="title_section3">Portátiles</string>
+
+<string name="action_info">Mas información</string>
+<string name="action_shop">Seleccionar Fecha</string>
+</resources>
