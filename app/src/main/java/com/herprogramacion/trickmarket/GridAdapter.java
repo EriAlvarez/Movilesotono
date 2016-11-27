@@ -2,6 +2,7 @@ package com.herprogramacion.trickmarket;
 
 import android.app.Activity;
 import android.content.Context;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.View;
@@ -13,9 +14,10 @@ import android.widget.PopupMenu;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.support.v7.app.ActionBarActivity;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
-import android.os.Bundle;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 
@@ -88,4 +90,13 @@ public class GridAdapter extends BaseAdapter {
 
         return view;
     }
+  /*  public void prueba3(View v) {
+        LayoutInflater inflater = getLayoutInflater();
+        View layout = inflater.inflate(R.layout.toast1,	null);
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(layout);
+        toast.show();
+    }*/
 }
