@@ -3,14 +3,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal" android:background="#ff0">
+    android:orientation="horizontal" android:background="#689F38">
     <ImageView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:src="@drawable/ic_add_circle_black_36dp"
+        android:src="@drawable/ic_announcement_black_36dp"
         android:id="@+id/imageView1"/>
     <TextView
-        android:text="Toast customizado"
+        android:text="Encuentra la ubicación en la sección de mapas"
         android:layout_width="wrap_content"
         android:id="@+id/textView1"
         android:layout_gravity="right"

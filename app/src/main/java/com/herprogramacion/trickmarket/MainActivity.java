@@ -153,6 +153,8 @@ public class MainActivity extends AppCompatActivity {
             return mFragmentTitles.get(position);
         }
     }
+
+    //Mensaje Toast Customizado
     public void prueba3(View v) {
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.toast1,	null);

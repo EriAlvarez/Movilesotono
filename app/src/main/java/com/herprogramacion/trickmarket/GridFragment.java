@@ -100,6 +100,10 @@ public class GridFragment extends Fragment {
         TextView descripcion = (TextView) view.findViewById(R.id.descripcion);
         descripcion.setText(item.getDescripcion());
 
+        //Seteando horario
+        TextView horario = (TextView) view.findViewById(R.id.horario);
+        horario.setText(item.getHorario());
+
         // Seteando Precio
         TextView precio = (TextView) view.findViewById(R.id.precio);
         precio.setText(item.getPrecio());
@@ -107,6 +111,7 @@ public class GridFragment extends Fragment {
         // Seteando Rating
         RatingBar ratingBar = (RatingBar) view.findViewById(R.id.rating);
         ratingBar.setRating(item.getRating());
+
 
         return view;
     }

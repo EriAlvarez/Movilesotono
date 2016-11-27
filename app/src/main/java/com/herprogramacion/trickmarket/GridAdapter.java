@@ -84,19 +84,16 @@ public class GridAdapter extends BaseAdapter {
         TextView precio = (TextView) view.findViewById(R.id.precio);
         precio.setText(item.getPrecio());
 
+        //Seteando Horario
+        TextView horario = (TextView) view.findViewById(R.id.horario);
+        horario.setText(item.getHorario());
+
         // Seteando Rating
         RatingBar ratingBar = (RatingBar) view.findViewById(R.id.rating);
         ratingBar.setRating(item.getRating());
 
+
         return view;
     }
-  /*  public void prueba3(View v) {
-        LayoutInflater inflater = getLayoutInflater();
-        View layout = inflater.inflate(R.layout.toast1,	null);
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-        toast.setDuration(Toast.LENGTH_LONG);
-        toast.setView(layout);
-        toast.show();
-    }*/
+
 }
