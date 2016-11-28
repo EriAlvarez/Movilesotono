@@ -89,8 +89,8 @@ public class GridAdapter extends BaseAdapter {
         horario.setText(item.getHorario());
 
         // Seteando Rating
-        RatingBar ratingBar = (RatingBar) view.findViewById(R.id.rating);
-        ratingBar.setRating(item.getRating());
+      /*  RatingBar ratingBar = (RatingBar) view.findViewById(R.id.rating);
+        ratingBar.setRating(item.getRating());*/
 
 
         return view;

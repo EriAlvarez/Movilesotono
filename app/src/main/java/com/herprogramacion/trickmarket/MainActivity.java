@@ -2,6 +2,7 @@ package com.herprogramacion.trickmarket;
 
 import android.content.Intent;
 import android.graphics.drawable.LayerDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Preparar las pestañas
         TabLayout tabs = (TabLayout) findViewById(R.id.tabs);
+        tabs.setupWithViewPager(mViewPager);
     }
 
 
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
   @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
-       // MenuItem item = menu.findItem(R.id.action_shop);
+//       MenuItem item = menu.findItem(R.id.action_shop);
 
         // Obtener drawable del item
        // LayerDrawable icon = (LayerDrawable) item.getIcon();
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @param msg Mensaje a proyectar
      */
-    /*private void showSnackBar(String msg) {
+   /* private void showSnackBar(String msg) {
         Snackbar.make(findViewById(R.id.search), msg, Snackbar.LENGTH_LONG).show();
     }*/
 
@@ -158,6 +160,8 @@ public class MainActivity extends AppCompatActivity {
     public void prueba3(View v) {
         LayoutInflater inflater = getLayoutInflater();
         View layout = inflater.inflate(R.layout.toast1,	null);
+        //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("geo:19.50, -96.90"));
+        //startActivity(intent);
         Toast toast = new Toast(getApplicationContext());
         toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
         toast.setDuration(Toast.LENGTH_LONG);

@@ -109,8 +109,8 @@ public class GridFragment extends Fragment {
         precio.setText(item.getPrecio());
 
         // Seteando Rating
-        RatingBar ratingBar = (RatingBar) view.findViewById(R.id.rating);
-        ratingBar.setRating(item.getRating());
+       /* RatingBar ratingBar = (RatingBar) view.findViewById(R.id.rating);
+        ratingBar.setRating(item.getRating());*/
 
 
         return view;
